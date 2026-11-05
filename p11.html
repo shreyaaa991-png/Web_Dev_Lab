@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Newspaper Layout</title>
+
+<style>
+body {
+    font-family: Arial;
+    margin: 20px;
+    background: #f5f5f5;
+}
+
+header {
+    background: darkblue;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Three Column Grid */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.box {
+    background: white;
+    padding: 20px;
+    border: 1px solid gray;
+}
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>DAILY NEWS</h1>
+    <p>Today's Latest News</p>
+</header>
+
+<div class="container">
+
+    <div class="box">
+        <h2>Sports</h2>
+        <p>Latest sports news and updates.</p>
+    </div>
+
+    <div class="box">
+        <h2>Main News</h2>
+        <p>Welcome to our newspaper website.</p>
+        <p>Read the latest national and international news.</p>
+    </div>
+
+    <div class="box">
+        <h2>Technology</h2>
+        <p>New technology updates and discoveries.</p>
+    </div>
+
+</div>
+
+</body>
+</html>

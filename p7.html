@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Design Tokens & Typography</title>
+
+    <style>
+        /* DESIGN TOKENS */
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #f1f5f9;
+            --text-color: #1e293b;
+
+            --small-size: 14px;
+            --medium-size: 18px;
+            --large-size: 28px;
+
+            --spacing: 20px;
+            --radius: 10px;
+
+            --main-font: Arial, sans-serif;
+        }
+
+        /* TYPOGRAPHY SYSTEM */
+        body {
+            font-family: var(--main-font);
+            color: var(--text-color);
+            background: var(--secondary-color);
+            margin: 0;
+            padding: 30px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: var(--large-size);
+        }
+
+        h2 {
+            font-size: var(--medium-size);
+        }
+
+        p {
+            font-size: var(--small-size);
+            line-height: 1.6;
+        }
+
+        /* CARD DESIGN */
+        .card {
+            background: white;
+            padding: var(--spacing);
+            border-radius: var(--radius);
+        }
+
+        button {
+            background: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <h1>Design Tokens</h1>
+
+        <h2>Typography System</h2>
+
+        <p>
+            Design tokens help us reuse colors,
+            fonts, spacing and sizes in CSS.
+        </p>
+
+        <button>Learn More</button>
+    </div>
+
+</body>
+</html>

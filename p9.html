@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Responsive Navbar and Cards</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f2f2f2;
+}
+
+/* Navbar */
+nav {
+    background: blue;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+/* Card Grid */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.card {
+    background: white;
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h2 style="color:white">My Portfolio</h2>
+    <div>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+    </div>
+</nav>
+
+<div class="container">
+
+    <div class="card">
+        <h2>HTML</h2>
+        <p>Web Structure</p>
+    </div>
+
+    <div class="card">
+        <h2>CSS</h2>
+        <p>Web Design</p>
+    </div>
+
+    <div class="card">
+        <h2>JavaScript</h2>
+        <p>Web Interaction</p>
+    </div>
+
+</div>
+
+</body>
+</html>
