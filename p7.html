@@ -1,61 +1,40 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Design Tokens & Typography</title>
+    <title>Design Tokens</title>
 
     <style>
-        /* DESIGN TOKENS */
         :root {
-            --primary-color: #2563eb;
-            --secondary-color: #f1f5f9;
-            --text-color: #1e293b;
-
-            --small-size: 14px;
-            --medium-size: 18px;
-            --large-size: 28px;
-
-            --spacing: 20px;
-            --radius: 10px;
-
-            --main-font: Arial, sans-serif;
+            --blue: rgb(255, 0, 170);
+            --size: 20px;
         }
 
-        /* TYPOGRAPHY SYSTEM */
         body {
-            font-family: var(--main-font);
-            color: var(--text-color);
-            background: var(--secondary-color);
-            margin: 0;
+            font-family: Arial;
+            background: rgb(24, 23, 23);
             padding: 30px;
         }
 
-        h1 {
-            color: var(--primary-color);
-            font-size: var(--large-size);
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
         }
 
-        h2 {
-            font-size: var(--medium-size);
+        h1 {
+            color: var(--blue);
         }
 
         p {
-            font-size: var(--small-size);
-            line-height: 1.6;
-        }
-
-        /* CARD DESIGN */
-        .card {
-            background: white;
-            padding: var(--spacing);
-            border-radius: var(--radius);
+            font-size: 14px;
         }
 
         button {
-            background: var(--primary-color);
-            color: white;
-            padding: 10px 20px;
+            background: var(--blue);
+            color: rgb(212, 170, 170);
+            padding: 10px;
             border: none;
-            border-radius: 5px;
         }
     </style>
 </head>
@@ -68,12 +47,13 @@
         <h2>Typography System</h2>
 
         <p>
-            Design tokens help us reuse colors,
-            fonts, spacing and sizes in CSS.
+            Design tokens help reuse colors,
+            fonts and sizes in CSS.
         </p>
 
         <button>Learn More</button>
     </div>
 
 </body>
+
 </html>
