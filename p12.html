@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Shreya | Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff5f8;
+            color: #40313a;
+        }
+
+        header {
+            background-color: #b85c7a;
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav {
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #ffe0eb;
+        }
+
+        .home,
+        .about,
+        #skills,
+        .contact {
+            padding: 40px 50px;
+            text-align: center;
+        }
+
+        .home h1 span {
+            color: #c45b83;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #c45b83;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .button:hover {
+            background-color: #963d60;
+        }
+
+        .skills-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .skills-list span {
+            background-color: #f4d5e1;
+            padding: 12px 20px;
+            border-radius: 6px;
+        }
+
+        .projects {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .projects h2 {
+            font-size: 32px;
+            color: #a7476d;
+        }
+
+        .project-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-top: 35px;
+        }
+
+        .project-card {
+            background-color: white;
+            border: 2px solid #edbfd0;
+            padding: 20px;
+            text-align: left;
+            border-radius: 8px;
+        }
+
+        .project-card h3 {
+            color: #b64f78;
+            font-size: 22px;
+        }
+
+        .project-card p {
+            line-height: 1.6;
+        }
+
+        .project-card:hover {
+            border-color: #c45b83;
+        }
+
+        footer {
+            background-color: #b85c7a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>My Portfolio</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <h1>Hi, I'm <span>Shreya</span></h1>
+
+        <h2>Aspiring Web Developer</h2>
+
+        <p>
+            I enjoy learning new technologies, building websites
+            and working on creative projects.
+        </p>
+
+        <a href="#projects" class="button">View My Work</a>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Me</h2>
+
+        <p>
+            Hello! I'm Shreya, a Computer Science student interested in
+            web development and technology. I enjoy exploring
+            new ideas, learning programming and building
+            creative projects.
+        </p>
+
+        <p>
+            I am always looking for opportunities to improve
+            my skills and gain practical experience.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+
+        <div class="skills-list">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Python</span>
+            <span>Java</span>
+            <span>Responsive Design</span>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2>My Projects</h2>
+
+        <div class="project-list">
+
+            <div class="project-card">
+                <h3>Movie Quiz Game</h3>
+
+                <p>
+                    An interactive picture-based quiz game where
+                    players identify movies using visual clues
+                    and test their movie knowledge.
+                </p>
+
+                <p><b>Technologies:</b> HTML, CSS, JavaScript</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Straw Hat Pirates</h3>
+
+                <p>
+                    A creative web project inspired by One Piece,
+                    featuring the Straw Hat Pirates and their
+                    adventures.
+                </p>
+
+                <p><b>Technologies:</b> HTML, CSS, JavaScript</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Personal Portfolio</h3>
+
+                <p>
+                    A personal website created to showcase my
+                    introduction, skills, projects and interests
+                    in web development.
+                </p>
+
+                <p><b>Technologies:</b> HTML, CSS</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+
+        <p>
+            Interested in connecting or working together?
+            Feel free to reach out!
+        </p>
+
+        <p>GitHub: shreyaaa991-png</p>
+
+        <a href="https://www.linkedin.com/in/shreya-r-a88783428/" class="button">
+            LinkedIn
+        </a>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Shreya. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
